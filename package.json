@@ -1,0 +1,21 @@
+{
+  "name": "browen",
+  "version": "1.0.0",
+  "description": "app view",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Uno Network Offices inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.0.1"
+  },
+  "dependencies": {
+    "electron-packager": "^15.4.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "embla-carousel": "^6.0.2",
+    "embla-carousel-wheel-gestures": "^2.0.2",
+    "page-changed": "^2.0.7"
+  }
+}

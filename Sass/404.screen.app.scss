@@ -1,0 +1,26 @@
+body{
+    background: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+h1{
+    position: absolute;
+    color: black;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 400;
+    top: 200px;
+    text-align: center;
+    a{
+        position: relative;
+        font-size: 20px;
+        font-family: arial;
+        font-weight: bold;
+        color: rgb(47, 120, 255);
+    }
+}

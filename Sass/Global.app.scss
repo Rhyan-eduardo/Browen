@@ -1,0 +1,278 @@
+@import "./Theme.app.scss";
+@import "./Variables.app.scss";
+
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-drag: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#LaunchIcon{
+    position: absolute;
+    width: 90px;
+    bottom: 60px;
+}
+.ConectIcon{
+    position: absolute;
+    width: 90px;
+    top: 170px;
+}
+#MoveArea{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 13px;
+    -webkit-app-region: drag;
+    z-index: 1050;
+}
+#CellFrame{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.CellCam{
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    z-index: 5010;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#NotificationBar{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 18px;
+    background: #2D2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CellHour{
+    position: absolute;
+    color: rgb(240, 240, 240);
+    font-family: arial;
+    font-size: 11px;
+    font-weight: initial;
+    left: 15px;
+}
+#Baterry-icon{
+    position: absolute;
+    right: 15px;
+    width: 13px;
+}
+#Wifi-icon{
+    position: absolute;
+    right: 35px;
+    width: 12px;
+}
+#Gsm-signal-icon{
+    position: absolute;
+    right: 55px;
+    width: 8px;
+}
+#BBody{
+    position: absolute;
+    width: 247px;
+    height: 546px;
+    background: $background-default-color;
+    z-index: 1000;
+    top: 16px;
+    left: 11px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Wel{
+    position: absolute;
+    color: $font-iu-default-color;
+    font-family: arial;
+    font-size: 13px;
+    a{
+        color: rgb(11, 136, 253);
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.Copyright{
+    position: absolute;
+    color: $font-iu-default-color;
+    font-family: arial;
+    font-size: 8px;
+    bottom: 15px;
+    text-align: center;
+    a{
+        color: rgb(11, 136, 253);
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+#URL-Modal{
+    position: absolute;
+    bottom: -200px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background: $modal-color;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: Modal-Animation 0.6s linear both;
+}
+@keyframes Modal-Animation {
+    to{
+        bottom: 0px;
+    }
+}
+#ModalDetail{
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    border-radius: 50px;
+    background: #464446;
+    top: 10px;
+    z-index: 10;
+}
+#URL-Field{
+    position: absolute;
+    top: 70px;
+    width: 70%;
+    height: 25px;
+    background: #2C2B2B;
+    outline: none;
+    border: 1px solid #464446;
+    border-radius: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #c9c9c9;
+    font-family: arial;
+    font-size: 13px;
+}
+.URL-Label{
+    position: absolute;
+    color: rgb(11, 136, 253);
+    font-family: arial;
+    font-size: 8px;
+    background: #2C2B2B;
+    padding-left: 2px;
+    padding-right: 2px;
+    left: 40px;
+    top: 66px;
+}
+#URL-Load{
+    position: absolute;
+    top: 110px;
+    width: 75%;
+    outline: none;
+    border: none;
+    background: $primary-button-color;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+    height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover{
+        background: darken($primary-button-color, 5%);
+    }
+    &:active{
+        top: 111px;
+    }
+}
+#ModalCancelButton{
+    position: absolute;
+    color: $font-iu-default-color;
+    font-family: arial;
+    font-size: 12px;
+    bottom: 20px;
+    padding: 5px;
+    &:hover{
+        cursor: pointer;
+        color: lighten($font-iu-default-color, 20%);
+    }
+}
+.testBtn{
+    position: absolute;
+    top: 110px;
+    color: red;
+}
+.Modal-Title{
+    position: absolute;
+    color: #5f5f5f;
+    font-family: arial;
+    font-size: 10px;
+    top: 30px;
+}
+#BrowenBody{
+    position: absolute;
+    @include BrowenViewHide(100%); //0% is hide 100% is show
+    background: $background-default-color !important;
+    z-index: 2000 !important;
+    top: 18px !important;
+    height: 96.6% !important;
+    outline: none;
+    border: 0;
+    overflow-y: auto;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
+}
+#DeviceControl{
+    position: absolute;
+    left: 0px;
+    bottom: -29px;
+    width: 100%;
+    height: 30px;
+    background: $color-opacity;
+    z-index: 4000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    &:hover{
+        animation: DeviceControl 0.3s linear both;
+    }
+    img{
+        position: relative;
+        width: 15px;
+        padding: 5px 10px 5px 10px;
+        margin: 2px;
+        border-radius: 5px;
+        transition: all 0.3s;
+        -webkit-user-drag: none;
+        &:hover{
+            cursor: pointer;
+            background-color: $device-controls-background;
+        }
+    }
+}
+@keyframes DeviceControl {
+    to{
+        bottom: 0px;
+    }
+}

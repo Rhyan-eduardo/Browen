@@ -1,0 +1,228 @@
+/* Default theme */
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#MoveArea {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 13px;
+  -webkit-app-region: drag;
+  z-index: 1050;
+}
+
+#CellFrame {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+.CellCam {
+  position: absolute;
+  top: 10px;
+  width: 50px;
+  z-index: 1010;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+#NotificationBar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 18px;
+  background: #2D2C2C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#CellHour {
+  position: absolute;
+  color: #f0f0f0;
+  font-family: arial;
+  font-size: 11px;
+  font-weight: initial;
+  left: 15px;
+}
+
+form {
+  border: 1px solid red;
+  width: auto;
+  height: auto;
+}
+
+#Baterry-icon {
+  position: absolute;
+  right: 15px;
+  width: 13px;
+}
+
+#Wifi-icon {
+  position: absolute;
+  right: 35px;
+  width: 12px;
+}
+
+#Gsm-signal-icon {
+  position: absolute;
+  right: 55px;
+  width: 8px;
+}
+
+#BBody {
+  position: absolute;
+  width: 247px;
+  height: 546px;
+  background: #232222;
+  z-index: 1000;
+  top: 16px;
+  left: 11px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Wel {
+  position: absolute;
+  color: #666666;
+  font-family: arial;
+  font-size: 13px;
+}
+
+.Wel a {
+  color: #0b88fd;
+  cursor: pointer;
+}
+
+.Wel a:hover {
+  text-decoration: underline;
+}
+
+#URL-Modal {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 200px;
+  background: #2C2B2B;
+  border-radius: 30px 30px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ModalDetail {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-radius: 50px;
+  background: #464446;
+  top: 10px;
+  z-index: 10;
+}
+
+#URL-Field {
+  position: absolute;
+  top: 70px;
+  width: 70%;
+  height: 25px;
+  background: #2C2B2B;
+  outline: none;
+  border: 1px solid #464446;
+  border-radius: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #c9c9c9;
+  font-family: arial;
+  font-size: 13px;
+}
+
+.URL-Label {
+  position: absolute;
+  color: #0b88fd;
+  font-family: arial;
+  font-size: 8px;
+  background: #2C2B2B;
+  padding-left: 2px;
+  padding-right: 2px;
+  left: 40px;
+  top: 66px;
+}
+
+#URL-Load {
+  position: absolute;
+  top: 110px;
+  width: 75%;
+  outline: none;
+  border: none;
+  background: #0b88fd;
+  color: white;
+  font-family: arial;
+  font-size: 12px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#URL-Load:hover {
+  background: #027bed;
+}
+
+.Modal-Title {
+  position: absolute;
+  color: #5f5f5f;
+  font-family: arial;
+  font-size: 10px;
+  top: 30px;
+}
+/*# sourceMappingURL=Global.app.css.map */

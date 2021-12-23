@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- READER -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Launch.screen.app.css">
+    <script src="../../Scripts.app.js"></script>
+    <script src="./Launch.screen.app.js"></script>
+    <title>Browen</title>
+
+    <!-- END -->
+
+</head>
+<body onload="InitTime()">
+
+    <!-- CELL FRAME -->
+
+    <img src="../../Assets.app/Frames/Cell[01].png" id="CellFrame" onclick="ReloadPage()">
+    <img src="../../Assets.app/Frames/Cam.png" class="CellCam">
+
+    <!-- END -->
+
+    <!-- ViEW -->
+
+    <div id="MoveArea"></div>
+
+    <div id="BBody" class="BBody">
+
+        <iframe src="http://localhost:8100" id="BrowenBody">
+
+        </iframe>
+
+        <div id="NotificationBar">
+            <span id="CellHour">00:00</span>
+
+            <img src="../../Assets.app/Icons/battery-charging.png" id="Baterry-icon">
+            <img src="../../Assets.app/Icons/wifi.png" id="Wifi-icon">
+            <img src="../../Assets.app/Icons/bar-chart.png" id="Gsm-signal-icon">
+        </div>
+
+        <img src="../../Assets.app/Icons/conection-app-png.png" class="ConectIcon">
+
+        <img src="../../Assets.app/Logos/app-logo-png.png" id="LaunchIcon">
+
+        <p class="Wel">
+        Bem vindo ao Bronwe,
+        <br>Abrir <a id="OpenURLModal">URL</a> ou <a id="OpenLHModal">Localhost</a></p>
+
+        <div id="URL-Modal">
+            <div id="ModalDetail"></div>
+
+            <h1 class="Modal-Title">Insira um URL</h1>
+
+            <input type="url" id="URL-Field" placeholder="http://localhost:8100" name="URLink" required>
+            <label for="URL-Field" class="URL-Label">URL</label>
+
+            <button id="URL-Load" value="0" type="submit">Entrar</button>
+
+            <h1 id="ModalCancelButton">Cancelar</h1>
+
+        </div>
+
+        <div id="DeviceControl">
+            <img src="../../Assets.app/Icons/Device Control/apps.png" id="apps">
+            <img src="../../Assets.app/Icons/Device Control/home.png" id="home">
+            <img src="../../Assets.app/Icons/Device Control/back.png" id="back">            
+        </div>
+
+        <p class="Copyright">&copy; 2021 Uno One Soulth america<br>a Uno Network Offices Inc. Company<br><a>Termos</a> e <a>Politicas de privacidade</a></p>
+
+    </div>
+
+    <!-- END -->
+    
+</body>
+</html>
